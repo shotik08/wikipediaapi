@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multilingual Wikipedia with Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌍 Multilingual Wikipedia</h1>
+    
+    <div class="search-container">
+      <div class="input-row">
+        <select class="language-select" id="languageSelect">
+          <option value="en">🇺🇸 English</option>
+          <option value="zh">🇨🇳 中文 (Chinese)</option>
+          <option value="es">🇪🇸 Español</option>
+          <option value="ar">🇸🇦 العربية (Arabic)</option>
+          <option value="hi">🇮🇳 हिन्दी (Hindi)</option>
+          <option value="pt">🇵🇹 Português</option>
+          <option value="ru">🇷🇺 Русский</option>
+          <option value="ja">🇯🇵 日本語</option>
+          <option value="fr">🇫🇷 Français</option>
+          <option value="de">🇩🇪 Deutsch</option>
+          <option value="ka">🇬🇪 ქართული (Georgian)</option>
+        </select>
+        
+        <input 
+          type="text" 
+          class="search-input" 
+          id="searchInput" 
+          placeholder="Enter a topic..."
+        >
+        
+        <button class="search-btn" id="searchBtn">Search</button>
+      </div>
+    </div>
+    
+    <div class="result" id="result">
+      <p class="placeholder-text">Select a language and enter a topic to get started!</p>
+    </div>
+    
+    <div class="language-info" id="languageInfo">
+      Currently searching in: <span id="currentLanguage">English Wikipedia</span>
+    </div>
+    
+    <div class="stats" id="stats"></div>
+    
+    
+    <div class="notes-section">
+      <div class="notes-header">
+        <h3 class="notes-title">📝 My Notes</h3>
+        <div class="notes-controls">
+          <button class="add-note-btn" id="addNoteBtn">➕ Add Note</button>
+          <button class="clear-notes-btn" id="clearNotesBtn">🗑️ Clear All</button>
+        </div>
+      </div>
+      
+      <div class="add-note-section" id="addNoteSection">
+        <textarea 
+          class="note-input" 
+          id="noteInput" 
+          placeholder="Write your note here..."
+        ></textarea>
+        <div class="note-actions">
+          <button class="save-note-btn" id="saveNoteBtn">💾 Save Note</button>
+          <button class="cancel-note-btn" id="cancelNoteBtn">❌ Cancel</button>
+        </div>
+      </div>
+      
+      <div class="notes-list" id="notesList">
+        <div class="no-notes">No notes yet. Click "Add Note" to create your first note!</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
