@@ -1,0 +1,16 @@
+# virtual environments
+.venv/
+venv/
+env/
+
+# python caches
+__pycache__/
+*.py[cod]
+*.pyo
+
+# environment files
+.env
+
+# OS cruft
+.DS_Store
+Thumbs.db
