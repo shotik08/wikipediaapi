@@ -2,7 +2,7 @@ import re
 import requests
 from urllib.parse import quote
 
-from config import WIKI_LANG
+from .config import WIKI_LANG
 
 
 def _wiki_search_title(query: str, lang: str = WIKI_LANG, timeout: float = 8.0) -> str | None:

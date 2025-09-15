@@ -4,3 +4,5 @@ langchain-core==0.3.76
 python-dotenv==1.1.1
 requests==2.32.5
 typing-extensions==4.15.0
+fastapi==0.115.0
+uvicorn==0.30.6

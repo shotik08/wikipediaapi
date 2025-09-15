@@ -1,6 +1,6 @@
-from graph import graph
-from utils import _extract_content
-from wiki import maybe_handle_wikipedia_command
+from .graph import graph
+from .utils import _extract_content
+from .wiki import maybe_handle_wikipedia_command
 
 
 def chat_loop(thread_id: str = "default"):

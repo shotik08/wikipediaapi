@@ -6,7 +6,7 @@ from langgraph.graph.message import add_messages
 from langgraph.checkpoint.memory import InMemorySaver
 from langchain_core.messages import SystemMessage
 
-from config import SYSTEM_PROMPT, get_llm
+from .config import SYSTEM_PROMPT, get_llm
 
 # ----- State definition -----
 class State(TypedDict):
