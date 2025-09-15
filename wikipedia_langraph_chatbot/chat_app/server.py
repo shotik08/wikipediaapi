@@ -2,9 +2,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from graph import graph
-from utils import _extract_content
-from wiki import maybe_handle_wikipedia_command
+from .graph import graph
+from .utils import _extract_content
+from .wiki import maybe_handle_wikipedia_command
 
 
 class ChatRequest(BaseModel):
